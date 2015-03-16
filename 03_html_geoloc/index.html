@@ -6,7 +6,11 @@
 		<script>
 			function maLocalisation(position) {
 				//alert("Longitude : "+ position.coords.longitude +", Latitude : " + position.coords.latitude +", Altitude : " + position.coords.altitude);
-				document.getElementById('localisation').innerHTML = '<p>Longitude : '+position.coords.longitude+'</p>'+'<p>Latitude : '+position.coords.latitude+'</p>'+'<p>Altitude : '+position.coords.altitude+'</p>';
+				var geoInfos = "Position déterminée : <br />";
+				geoInfos += "Latitude : "+position.coords.latitude+"<br />"
+				geoInfos += "Longitude : "+position.coords.longitude+"<br />"
+				geoInfos += "Altitude : "+position.coords.altitude+"<br />"
+				document.getElementById('localisation').innerHTML = geoInfos;
 			}
 			if (navigator.geolocation) {
 				navigator.geolocation.getCurrentPosition(maLocalisation);
@@ -16,6 +20,8 @@
 		</script>
 	</head>
 	<body>
-		<div id="localisation"></div>
+		<div id="localisation">
+			Zone présentant les informations de géolocalisation pas défaut.
+		</div>
 	</body>
 </html>
