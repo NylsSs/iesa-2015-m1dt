@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<newss>
+	 <news>
+		 <title>Actus</title>
+		 <description>Totes les actus sont ici</description>
+		 <link></link>
+		 <items>
+		 	<item>
+		 		<title></title>
+				 <description></description>
+				 <link></link>
+		 	</item>
+		 </items>
+	 </news>
+	 <news>
+		 <title>Actus</title>
+		 <description>Totes les actus sont ici</description>
+		 <link></link>
+	 </news>
+</newss>
