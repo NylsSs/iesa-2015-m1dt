@@ -5,15 +5,24 @@
 		<title>GEOLOCALISATION</title>
 		<script>
 			function maLocalisation(position) {
-				//alert("Longitude : "+ position.coords.longitude +", Latitude : " + position.coords.latitude +", Altitude : " + position.coords.altitude);
 				var geoInfos = "Position déterminée : <br />";
 				geoInfos += "Latitude : "+position.coords.latitude+"<br />"
 				geoInfos += "Longitude : "+position.coords.longitude+"<br />"
 				geoInfos += "Altitude : "+position.coords.altitude+"<br />"
 				document.getElementById('localisation').innerHTML = geoInfos;
 			}
+			function monitoring(position) {
+				var geoInfos = "Position déterminée en temps réel : <br />";
+				geoInfos += "Latitude : "+position.coords.latitude+"<br />"
+				geoInfos += "Longitude : "+position.coords.longitude+"<br />"
+				geoInfos += "Altitude : "+position.coords.altitude+"<br />"
+				geoInfos += "Vitesse : "+position.coords.speed+"<br />"
+				document.getElementById('localisation').innerHTML = geoInfos;
+			}
+
 			if (navigator.geolocation) {
 				navigator.geolocation.getCurrentPosition(maLocalisation);
+				navigator.geolocation.watchPosition(monitoring);
 			} else {
 				alert("Votre navigateur ne prend pas en compte la geolocalisation HTML5.")
 			}
@@ -21,7 +30,7 @@
 	</head>
 	<body>
 		<div id="localisation">
-			Zone présentant les informations de géolocalisation pas défaut.
+			Zone présentant les informations de géolocalisation par défaut.
 		</div>
 	</body>
 </html>
