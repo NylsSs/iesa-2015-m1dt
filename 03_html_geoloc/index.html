@@ -5,7 +5,8 @@
 	<title>GEOLOCALISATION</title>
 	<script>
 		function maLocalisation(position) {
-			alert("Longitude : "+ position.coords.longitude +", Latitude : " + position.coords.latitude +", Altitude : " + position.coords.altitude);
+			//alert("Longitude : "+ position.coords.longitude +", Latitude : " + position.coords.latitude +", Altitude : " + position.coords.altitude);
+			document.getElementById('localisation').innerHTML = '<p>Longitude : '+position.coords.longitude+'</p>'+'<p>Latitude : '+position.coords.latitude+'</p>'+'<p>Altitude : '+position.coords.altitude+'</p>';
 		}
 		if (navigator.geolocation) {
 			navigator.geolocation.getCurrentPosition(maLocalisation);
@@ -15,6 +16,6 @@
 	</script>
 </head>
 <body>
-
+<div id="localisation"></div>
 </body>
 </html>
