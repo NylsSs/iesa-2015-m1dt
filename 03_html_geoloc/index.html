@@ -1,21 +1,21 @@
 <!doctype html>
 <html lang="fr">
-<head>
-	<meta charset="utf-8">
-	<title>GEOLOCALISATION</title>
-	<script>
-		function maLocalisation(position) {
-			//alert("Longitude : "+ position.coords.longitude +", Latitude : " + position.coords.latitude +", Altitude : " + position.coords.altitude);
-			document.getElementById('localisation').innerHTML = '<p>Longitude : '+position.coords.longitude+'</p>'+'<p>Latitude : '+position.coords.latitude+'</p>'+'<p>Altitude : '+position.coords.altitude+'</p>';
-		}
-		if (navigator.geolocation) {
-			navigator.geolocation.getCurrentPosition(maLocalisation);
-		} else {
-			alert("Votre navigateur ne prend pas en compte la geolocalisation HTML5.")
-		}
-	</script>
-</head>
-<body>
-<div id="localisation"></div>
-</body>
+	<head>
+		<meta charset="utf-8">
+		<title>GEOLOCALISATION</title>
+		<script>
+			function maLocalisation(position) {
+				//alert("Longitude : "+ position.coords.longitude +", Latitude : " + position.coords.latitude +", Altitude : " + position.coords.altitude);
+				document.getElementById('localisation').innerHTML = '<p>Longitude : '+position.coords.longitude+'</p>'+'<p>Latitude : '+position.coords.latitude+'</p>'+'<p>Altitude : '+position.coords.altitude+'</p>';
+			}
+			if (navigator.geolocation) {
+				navigator.geolocation.getCurrentPosition(maLocalisation);
+			} else {
+				alert("Votre navigateur ne prend pas en compte la geolocalisation HTML5.")
+			}
+		</script>
+	</head>
+	<body>
+		<div id="localisation"></div>
+	</body>
 </html>
