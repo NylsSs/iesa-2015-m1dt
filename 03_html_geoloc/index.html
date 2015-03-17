@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>GEOLOCALISATION</title>
+		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=set_to_true_or_false"></script>
 		<script>
 			function displayLocalisation(position) {
 				var geoInfos = "Position déterminée : <br />";
@@ -10,6 +11,7 @@
 				geoInfos += "Longitude : "+position.coords.longitude+"<br />";
 				geoInfos += "Altitude : "+position.coords.altitude+"<br />";
 				document.getElementById('localisation').innerHTML = geoInfos;
+				map = new google.maps.Map(document.getElementById("map"), optionsMaps);
 			}
 			function displayError(error) {
 				var info = "Erreur lors de la geolocalisation : ";
@@ -31,10 +33,10 @@
 			}
 			/*function displayMyPosition(position) {
 				var geoInfos = "Position déterminée en temps réel : <br />";
-				geoInfos += "Latitude : "+position.coords.latitude+"<br />"
-				geoInfos += "Longitude : "+position.coords.longitude+"<br />"
-				geoInfos += "Altitude : "+position.coords.altitude+"<br />"
-				geoInfos += "Vitesse : "+position.coords.speed+"<br />"
+				geoInfos += "Latitude : "+position.coords.latitude+"<br />";
+				geoInfos += "Longitude : "+position.coords.longitude+"<br />";
+				geoInfos += "Altitude : "+position.coords.altitude+"<br />";
+				geoInfos += "Vitesse : "+position.coords.speed+"<br />";
 				document.getElementById('localisation').innerHTML = geoInfos;
 			}*/
 
@@ -42,13 +44,29 @@
 				navigator.geolocation.getCurrentPosition(displayLocalisation, displayError);
 				//navigator.geolocation.watchPosition(displayMyPosition);
 			} else {
-				alert("Votre navigateur ne prend pas en compte la geolocalisation HTML5.")
+				alert("Votre navigateur ne prend pas en compte la geolocalisation HTML5.");
 			}
+
+			// position par défaut : Châtelet à Paris
+			var centerpos = new google.maps.LatLng(48.579400,7.7519);
+
+			// Options relatives à la carte
+			var optionsMaps = {
+				center:centerpos,
+				mapTypeId: google.maps.MapTypeId.ROADMAP,
+				zoom: 15
+			};
+			// ROADMAP peut être remplacé par SATELLIT, HYBRID ou TERRAIN
+			// Zoom: 0 = terre entière, 19 : au niveau de la rue
+
+			//Initialisation de la carte pour l'élément portant l'Id map
+			var map;
 		</script>
 	</head>
 	<body>
 		<div id="localisation">
 			Zone présentant les informations de géolocalisation par défaut.
 		</div>
+		<div id="map" style="width:500px; height:500px;"></div>
 	</body>
 </html>
