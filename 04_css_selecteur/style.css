@@ -1,6 +1,47 @@
+/* FONT FACE */
+@font-face {
+    font-family: 'maven_pro_light100';
+    src: url('fonts/fonts/MavenProLight-100-webfont.eot');
+    src: url('fonts/MavenProLight-100-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/MavenProLight-100-webfont.woff2') format('woff2'),
+         url('fonts/MavenProLight-100-webfont.woff') format('woff'),
+         url('fonts/MavenProLight-100-webfont.ttf') format('truetype'),
+         url('fonts/MavenProLight-100-webfont.svg#maven_pro_light100') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'maven_pro_light200';
+    src: url('fonts/MavenProLight-200-webfont.eot');
+    src: url('fonts/MavenProLight-200-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/MavenProLight-200-webfont.woff2') format('woff2'),
+         url('fonts/MavenProLight-200-webfont.woff') format('woff'),
+         url('fonts/MavenProLight-200-webfont.ttf') format('truetype'),
+         url('fonts/MavenProLight-200-webfont.svg#maven_pro_light200') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'maven_pro_light300';
+    src: url('fonts/MavenProLight-300-webfont.eot');
+    src: url('fonts/MavenProLight-300-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/MavenProLight-300-webfont.woff2') format('woff2'),
+         url('fonts/MavenProLight-300-webfont.woff') format('woff'),
+         url('fonts/MavenProLight-300-webfont.ttf') format('truetype'),
+         url('fonts/MavenProLight-300-webfont.svg#maven_pro_light300') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /*Sélecteur d'ELEMENT*/
+body {
+	font-family: "maven_pro_light100"
+}
 h2 {
-    font-family: Trebuchet MS;
+    font-family: "maven_pro_light300";
     font-size: 35px;
     color: #454545;
 }
