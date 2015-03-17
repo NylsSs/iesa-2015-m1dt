@@ -42,8 +42,9 @@ body {
 }
 h2 {
     font-family: "maven_pro_light300";
-    font-size: 35px;
+    font-size: 2.2em;
     color: #454545;
+    font-style: oblique;
 }
 /*Sélecteur de CLASSE*/
 .mw-headline-anchor {
