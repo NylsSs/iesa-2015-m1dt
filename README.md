@@ -10,4 +10,5 @@ Syntaxe markdown : http://daringfireball.net/projects/markdown/syntax
 * Lors de la suppression d'un (ou plusieurs) fichier(s) : faire un git rm
 
 # CSS
-Border dotted : carrés s/ Chrome
+* Border dotted : carrés s/ Chrome
+* HSLA : 0, 100%, 100%, 0.5 (premier paramètre pas en %)
