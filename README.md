@@ -12,3 +12,5 @@ Syntaxe markdown : http://daringfireball.net/projects/markdown/syntax
 # CSS
 * Border dotted : carrés s/ Chrome
 * HSLA : 0, 100%, 100%, 0.5 (premier paramètre pas en %)
+* Dans la déclaration des media queries, une "," sépare les propertie et le "and" sépare les expressions
+  -> media=screen, projection and (min-width: 481px)
