@@ -85,4 +85,5 @@ h1, h2 {
     background-color: red;
     margin: 0 50px 20px;
     padding: 15px;
+    border: 14px solid blue;
 }
