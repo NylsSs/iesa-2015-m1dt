@@ -11,7 +11,13 @@
 				geoInfos += "Longitude : "+position.coords.longitude+"<br />";
 				geoInfos += "Altitude : "+position.coords.altitude+"<br />";
 				document.getElementById('localisation').innerHTML = geoInfos;
+
 				map = new google.maps.Map(document.getElementById("map"), optionsMaps);
+					marker = new google.maps.Marker ({
+				 	position: centerpos,
+				 	map: map,
+				 	title: "Vous êtes ici !"
+				 });
 			}
 			function displayError(error) {
 				var info = "Erreur lors de la geolocalisation : ";
@@ -58,6 +64,7 @@
 			};
 			// ROADMAP peut être remplacé par SATELLIT, HYBRID ou TERRAIN
 			// Zoom: 0 = terre entière, 19 : au niveau de la rue
+
 
 			//Initialisation de la carte pour l'élément portant l'Id map
 			var map;
