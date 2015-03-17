@@ -74,6 +74,7 @@ h1, h2 {
 }
 #firstHeading {
     text-transform: uppercase;
+    letter-spacing: 5px;
 }
 #mw-content-text > p {
     text-align: justify;
