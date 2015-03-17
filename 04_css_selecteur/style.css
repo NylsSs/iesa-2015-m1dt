@@ -38,7 +38,9 @@
 
 /*Sélecteur d'ELEMENT*/
 body {
-	font-family: "maven_pro_light100"
+	font-family: "maven_pro_light100";
+	margin: 0;
+	background: url("https://unsplash.com/photos/ILz31HBGEak/download") no-repeat scroll center 0 transparent;
 }
 h2 {
     font-family: "maven_pro_light300";
@@ -80,6 +82,7 @@ h1, h2 {
     text-align: justify;
     text-indent: 2em;
     line-height: 1.5em;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 .thumbimage {
     background-color: red;
