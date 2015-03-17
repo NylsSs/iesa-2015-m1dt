@@ -1,4 +1,5 @@
 # iesa-2015-m1dt 
+Syntaxe markdown : http://daringfireball.net/projects/markdown/syntax
 
 # JavaScript
 * Google Map : mettre des dimensions dans la div
