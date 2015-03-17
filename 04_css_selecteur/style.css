@@ -90,3 +90,6 @@ h1, h2 {
     padding: 15px;
     border: 14px solid blue;
 }
+#mw-navigation > h2 {
+    background: url("http://www.mapauvrelucette.fr/wp-content/uploads/2013/05/Ma-pauvre-Lucette-Petit-chat-3.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
