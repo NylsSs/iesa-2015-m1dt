@@ -79,4 +79,5 @@ h1, h2 {
 #mw-content-text > p {
     text-align: justify;
     text-indent: 2em;
+    line-height: 1.5em;
 }
