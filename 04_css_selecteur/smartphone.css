@@ -1,0 +1,17 @@
+body * {
+	width: 100%;
+	height: 200px;
+	box-sizing: border-box;
+}
+header {
+	background: #454545;
+}
+aside {
+	background: yellow;
+}
+section {
+	background: lightgrey;
+}
+footer {
+	background: red;
+}
