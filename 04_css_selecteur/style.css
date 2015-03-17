@@ -45,6 +45,7 @@ h2 {
     font-size: 2.2em;
     color: #454545;
     font-style: oblique;
+    font-variant: small-caps;
 }
 /*Sélecteur de CLASSE*/
 .mw-headline-anchor {
@@ -70,4 +71,7 @@ li.toclevel-1 a {
 /*Sélecteur GROUPING*/
 h1, h2 {
 	color: #FF6666;
+}
+#firstHeading {
+    text-transform: uppercase;
 }
