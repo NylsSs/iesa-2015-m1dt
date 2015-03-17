@@ -9,3 +9,5 @@ Syntaxe markdown : http://daringfireball.net/projects/markdown/syntax
 * Process de publication : add | commit -m | push
 * Lors de la suppression d'un (ou plusieurs) fichier(s) : faire un git rm
 
+# CSS
+Border dotted : carrés s/ Chrome
