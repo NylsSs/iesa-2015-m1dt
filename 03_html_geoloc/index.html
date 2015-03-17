@@ -4,25 +4,29 @@
 		<meta charset="utf-8">
 		<title>GEOLOCALISATION</title>
 		<script>
-			function maLocalisation(position) {
+			function displayLocalisation(position) {
 				var geoInfos = "Position déterminée : <br />";
-				geoInfos += "Latitude : "+position.coords.latitude+"<br />"
-				geoInfos += "Longitude : "+position.coords.longitude+"<br />"
-				geoInfos += "Altitude : "+position.coords.altitude+"<br />"
+				geoInfos += "Latitude : "+position.coords.latitude+"<br />";
+				geoInfos += "Longitude : "+position.coords.longitude+"<br />";
+				geoInfos += "Altitude : "+position.coords.altitude+"<br />";
 				document.getElementById('localisation').innerHTML = geoInfos;
 			}
-			function monitoring(position) {
+			function displayError(error) {
+				alert("Une erreur est survenue " + error.message);
+
+			}
+			/*function displayMyPosition(position) {
 				var geoInfos = "Position déterminée en temps réel : <br />";
 				geoInfos += "Latitude : "+position.coords.latitude+"<br />"
 				geoInfos += "Longitude : "+position.coords.longitude+"<br />"
 				geoInfos += "Altitude : "+position.coords.altitude+"<br />"
 				geoInfos += "Vitesse : "+position.coords.speed+"<br />"
 				document.getElementById('localisation').innerHTML = geoInfos;
-			}
+			}*/
 
 			if (navigator.geolocation) {
-				navigator.geolocation.getCurrentPosition(maLocalisation);
-				navigator.geolocation.watchPosition(monitoring);
+				navigator.geolocation.getCurrentPosition(displayLocalisation, displayError);
+				//navigator.geolocation.watchPosition(displayMyPosition);
 			} else {
 				alert("Votre navigateur ne prend pas en compte la geolocalisation HTML5.")
 			}
