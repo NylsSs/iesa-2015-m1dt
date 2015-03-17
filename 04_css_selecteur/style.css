@@ -85,7 +85,7 @@ h1, h2 {
     background-color: rgba(255, 255, 255, 0.2);
 }
 .thumbimage {
-    background-color: red;
+    background-color: hsla(446,40%,50%,.5);
     margin: 0 50px 20px;
     padding: 15px;
     border: 14px solid blue;
