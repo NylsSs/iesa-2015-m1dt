@@ -4,6 +4,8 @@ Syntaxe markdown : http://daringfireball.net/projects/markdown/syntax
 # JavaScript
 * Google Map : mettre des dimensions dans la div
 * Mettre un ";" à la fin de chaque instruction
+* Ressource : https://pragprog.com/
+* Devops : courant mettant en avant le travail "colaboratif" entre développeurs et chargés de l'exploitation des applications
 
 # GIT
 * Process de publication : add | commit -m | push
