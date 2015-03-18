@@ -10,6 +10,15 @@ Syntaxe markdown : http://daringfireball.net/projects/markdown/syntax
 * Sur mac, pour écrire "|" : alt + shift + L
 * Différents opérateurs pour la console : log / info / warn / error / debug
 
+## Tableau
+* Definition : var nomTable = [valeur, valeur, ...];
+ou var nomTable ();
+nomtable[0] = valeur;
+nomtable[1] = valeur;
+nomtable[2] = valeur;
+...
+* Fonctions du tableau : nomTable.reverse(); | nomTable.join(); | nomTable.sort();
+
 # GIT
 * Process de publication : add | commit -m | push
 * Lors de la suppression d'un (ou plusieurs) fichier(s) : faire un git rm
