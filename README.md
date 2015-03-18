@@ -6,6 +6,7 @@ Syntaxe markdown : http://daringfireball.net/projects/markdown/syntax
 * Mettre un ";" à la fin de chaque instruction
 * Ressource : https://pragprog.com/
 * Devops : courant mettant en avant le travail "colaboratif" entre développeurs et chargés de l'exploitation des applications
+* Une instruction avec 3 opérateurs tels que 3<=b<=5 ne fonctionne PAS !
 
 # GIT
 * Process de publication : add | commit -m | push
