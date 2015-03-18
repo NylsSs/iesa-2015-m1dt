@@ -16,6 +16,7 @@ Syntaxe markdown : http://daringfireball.net/projects/markdown/syntax
 * pwd : connaître le nom du répertoire dans lequel on se trouve
 * ls -la : tous ce qui se trouve dans un répertoire
 * cd : entrer dans un répertoire
+
 ## Cloner un répertoire
 * git clone https://github.com/NylsSs/iesa-2015-m1dt.git (adresse du répertoire)
 
