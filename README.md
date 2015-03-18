@@ -8,6 +8,7 @@ Syntaxe markdown : http://daringfireball.net/projects/markdown/syntax
 * Devops : courant mettant en avant le travail "colaboratif" entre développeurs et chargés de l'exploitation des applications
 * Une instruction avec 3 opérateurs tels que 3<=b<=5 ne fonctionne PAS !
 * Sur mac, pour écrire "|" : alt + shift + L
+* Différents opérateurs pour la console : log / info / warn / error / debug
 
 # GIT
 * Process de publication : add | commit -m | push
