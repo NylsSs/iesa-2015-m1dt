@@ -14,12 +14,19 @@
 		<li>ok</li>
 	</ul>
 	<script type="text/javascript">
-		function myFunction() {
-			console.log("Bonjour !");;
+		function saySomething(something) {
+			console.log(something);;
 		}
+		function sayHello() {
+			saySomething("Bonjour !");;
+		}
+		function sayThanks() {
+			saySomething("Dis merci !!!");;
 
+		}
 		function bePolite() {
-			myFunction();;
+			sayHello();;
+			sayThanks();;
 		}
 		bePolite();;
 	</script>
