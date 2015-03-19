@@ -6,13 +6,9 @@
 	</head>
 	<body>
 		<?php
-			$a = "Bonjour";
-			$$a = "Monde";
-			
-			echo $a . "<br />";
-			echo $$a . "<br />";
-			echo ${$a} . "<br />";
-			echo $Bonjour . "<br />";
+			define("AIRPLANE", "D112"); // peut s'écrire : const AIRPLANE = "D112"
+			echo AIRPLANE;
+			echo airplane;
 		?>
 	</body>
 </html>
