@@ -40,6 +40,7 @@ nomtable[2] = valeur;
 
 # PHP
 * Une constante s'écrit en majuscule par convention
+* Essayer de ne garder qu'une seule responsabilité par entité
 * 9 types de données basiques :
 * 4 scalaires :
 
@@ -47,10 +48,12 @@ nomtable[2] = valeur;
 2. integer
 3. float
 4. string
+
 * 2 types composes
 
 1. array
 2. object
+
 $ 2 types spéciaux
 
 1. resource
