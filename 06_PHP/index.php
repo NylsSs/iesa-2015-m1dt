@@ -6,9 +6,9 @@
 	</head>
 	<body>
 		<?php
-			define("AIRPLANE", "D112"); // peut s'écrire : const AIRPLANE = "D112"
-			echo AIRPLANE;
-			echo airplane;
+			$a = 112;
+			var_dump($a); // valeur de la variable et son type
+			echo gettype($a); // type de variable
 		?>
 	</body>
 </html>
