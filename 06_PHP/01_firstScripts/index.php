@@ -18,7 +18,25 @@
 			$myMovies = array ("Tarantino", "Pulp Fiction");
 			$myMovies ["Fincher"] = "Fight Club";
 			var_dump($myMovies);
+			echo "<br /><br /><br />";
 
+			# FONCTION
+			$a = 3;;
+			$b = 4;;
+			function somme() {
+				global $a, $b;;
+				$b = $a + $b;;
+			}
+			somme();;
+			echo $b . "<br />";;
+			
+			// Refactoring de la fonction
+			$c = 1;;
+			$d = 2;;
+			function somme2($e, $f) {
+				return $e + $f;;
+			}
+			echo somme2($c, $d);;
 		?>
 	</body>
 </html>

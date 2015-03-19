@@ -42,13 +42,22 @@ nomtable[2] = valeur;
 * Une constante s'écrit en majuscule par convention
 * 9 types de données basiques :
 * 4 scalaires :
+
 1. boolean
 2. integer
 3. float
 4. string
 * 2 types composes
+
 1. array
 2. object
 $ 2 types spéciaux
+
 1. resource
 2. NULL
+
+### Signature d'une fonction
+* C'est ce qu'il y a entre ()
+* ex : function monNom (param1, param2) {}
+* Lors de l'appel de la fonction, on passe en paramêtre les variables à traiter
+* ex : monNom (var1, var2);
