@@ -67,11 +67,9 @@ y Poehler et Nick Offerman dans "Parks and Recreation" / Crédit : NBC)</small><
 		<table>
 			<thead>
 				<thead>
-					
-						<?php foreach ($newsRss1 as $key => $value) { ?>
-							<th><?php echo $key;; ?></th>
-						<?php } ?>
-					
+					<?php foreach ($newsRss1 as $key => $value) { ?>
+						<th><?php echo $key;; ?></th>
+					<?php } ?>
 				</thead>
 			</thead>
 			<tbody>
@@ -84,5 +82,21 @@ y Poehler et Nick Offerman dans "Parks and Recreation" / Crédit : NBC)</small><
 			</tbody>
 		</table>
 		
+		<br><br><br>
+
+		<?php
+			function buildList($news) {
+				$html = "<ul>";;
+				foreach ($news as $key => $property) {
+					$html .= "<li>" . $property . "</li>";;
+				}
+				$html .= "</ul>";;
+				return $html;;
+			}
+			function displayList($news) {
+				echo buildList($news);;
+			}
+			displayList($newsRss1);;
+		 ?>
 	</body>
 </html>
