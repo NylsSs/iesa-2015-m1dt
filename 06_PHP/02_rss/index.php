@@ -50,14 +50,39 @@ y Poehler et Nick Offerman dans "Parks and Recreation" / Crédit : NBC)</small><
 				<th>Description</th>
 				<th>Contenu</th>
 			</thead>
-			<tr>
-				<td valign="top"><?php echo $newsRss["title"];;?></td>
-				<td valign="top"><?php echo $newsRss["link"];;?></td>
-				<td valign="top"><?php echo $newsRss["pubDate"];;?></td>
-				<td valign="top"><?php echo $newsRss["author"];;?></td>
-				<td valign="top"><?php echo $newsRss["description"];;?></td>
-				<td valign="top"><?php echo $newsRss["content"];;?></td>
-			</tr>
+			<tbody>
+				<tr>
+					<td valign="top"><?php echo $newsRss["title"];;?></td>
+					<td valign="top"><?php echo $newsRss["link"];;?></td>
+					<td valign="top"><?php echo $newsRss["pubDate"];;?></td>
+					<td valign="top"><?php echo $newsRss["author"];;?></td>
+					<td valign="top"><?php echo $newsRss["description"];;?></td>
+					<td valign="top"><?php echo $newsRss["content"];;?></td>
+				</tr>
+			</tbody>
 		</table>
+
+		<br><br><br>
+
+		<table>
+			<thead>
+				<thead>
+					
+						<?php foreach ($newsRss1 as $key => $value) { ?>
+							<th><?php echo $key;; ?></th>
+						<?php } ?>
+					
+				</thead>
+			</thead>
+			<tbody>
+				<tr>
+					<?php foreach ($newsRss1 as $key => $value) { ?>
+						<td valign="top"><?php echo $value;; ?></td>
+					<?php } ?>
+					
+				</tr>
+			</tbody>
+		</table>
+		
 	</body>
 </html>
