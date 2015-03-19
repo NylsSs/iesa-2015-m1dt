@@ -85,8 +85,6 @@ y Poehler et Nick Offerman dans "Parks and Recreation" / Crédit : NBC)</small><
 		<br><br><br>
 			<?php
 
-			$wantedProperties = array("title", "date");;
-
 			function buildList($news) {
 				$html = "<ul>";;
 				foreach ($news as $key => $property) {
